@@ -1,0 +1,59 @@
+.link-button {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#map {
+    position: relative;
+    top: 20;
+    bottom: 20;
+    width: 100%;
+}
+
+
+body {
+    background-color: pink;
+}
+
+.container {
+    display: flex;
+
+}
+
+#map {
+    height: 800px;
+    width: 100%;
+
+    margin-right: 60px;
+    margin-left: 200px;
+}
+
+#locations {
+    min-width: 250px;
+
+    padding-left: 30px;
+
+}
+
+#locations a {
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    font-size: 20px;
+}
+
+.popup-p {
+    font-weight: bold;
+}
+
+.popup-p img {
+    width: 100%;
+}
+
+.map-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
