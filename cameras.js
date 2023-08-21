@@ -116,6 +116,11 @@ const subways = axios('https://raw.githubusercontent.com/Willjfield/FOSS-for-Web
     }).addTo(map).bringToBack();
 });
 
+axios('https://raw.githubusercontent.com/akutubidze/Public-space-cameras/main/map.geojson').then(resp => {
+    L.geoJSON(resp.data).addTo(map)
+})
+
+
 locations.forEach(function (locationObj) {
 
 
