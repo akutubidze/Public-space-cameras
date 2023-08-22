@@ -92,6 +92,11 @@ const locations = [
         location: [40.720522816222655, -73.99218433131362],
         name: '<b>Sara D. Roosvelt Park</b><br>',
         time: "24Hour(Outdoor)"
+    },
+    {
+        location: [40.75379400655919, -73.98352412867399],
+        name: '<b>Briant Park</b><br>',
+        time: "7AM-11PM"
     }
 ]
 
@@ -115,6 +120,10 @@ const subways = axios('https://raw.githubusercontent.com/Willjfield/FOSS-for-Web
         }
     }).addTo(map).bringToBack();
 });
+
+axios('https://raw.githubusercontent.com/akutubidze/Public-space-cameras/main/map.geojson').then(resp => {
+    L.geoJSON(resp.data).addTo(map)
+})
 
 locations.forEach(function (locationObj) {
 
